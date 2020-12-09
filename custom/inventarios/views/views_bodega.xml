@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+
+    <record model="ir.ui.view" id="inventarios.bodega_list">
+        <field name="name">inventario</field>
+        <field name="model">inventarios.bodega</field>
+        <field name="arch" type="xml">
+            <tree>
+            <field name="name"/>
+            <field name="value"/>
+            <field name="quantity"/>
+            <field name="date_register"/>
+            <field name="description"/>
+        </tree>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="inventarios.bodega_action_window">
+        <field name="name">inventarios window</field>
+        <field name="res_model">inventarios.bodega</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="inventarios.bodega_action_server">
+        <field name="name">inventarios server</field>
+        <field name="model_id" ref="model_inventarios_bodega"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+            "type": "ir.actions.act_window",
+            "view_mode": "tree,form",
+            "res_model": self._name,
+            }
+        </field>
+    </record>
+
+    <menuitem name="Inventario" id="inventarios.menu_root"/>
+
+    <menuitem name="Bodega" id="inventarios.menu_bodega" parent="inventarios.menu_root" action="inventarios.bodega_action_window"/>
+    </data>
+</odoo>
