@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+    <record model="ir.ui.view" id="inventarios.registro_list">
+      <field name="name">Inventarios </field>
+      <field name="model">inventarios.registro</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre_id"/>
+
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="inventarios.registro_action_window">
+      <field name="name">Inventarios</field>
+      <field name="res_model">inventarios.registro</field>
+      <field name="view_mode">tree</field>
+    </record>
+
+    <record model="ir.actions.server" id="inventarios.registro_action_server">
+      <field name="name">Inventarios server</field>
+      <field name="model_id" ref="model_inventarios_registro"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+        <!-- views_registro  -->
+    <menuitem name="Registrar salida" id="inventarios.menu_3_list" parent="inventarios.menu_root"
+              action="inventarios.registro_action_window"/>
+    </data>
+</odoo>

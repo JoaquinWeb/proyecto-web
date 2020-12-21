@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_inventarios_bodega,access_inventarios.bodega,model_inventarios_bodega,,1,1,1,1
+access_inventarios_bodega,inventarios.bodega,model_inventarios_bodega,,1,1,1,1
+access_inventarios_bodega_proveedor,inventarios.bodega_proveedor,model_inventarios_bodega_proveedor,,1,1,1,1
+access_inventarios_registro,inventarios.registro,model_inventarios_registro,,1,1,1,1

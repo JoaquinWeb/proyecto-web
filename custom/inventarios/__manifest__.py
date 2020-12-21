@@ -1,18 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "inventarios",
+    'name': "Inventarios",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Este modulo sirve para anotar y llevar un registro """,
 
     'description': """
-        Se crea este modulo con la finalidad de entregar una ayuda 
-        para el control de las existencias de las bodegas
+        Modulo creado para la empresa de transporte 
     """,
 
     'author': "Joaquin Callejon",
-    'website': "http://www.yourcompany.com",
+    'website': "jcallejon17@alumnos.utalca.cl",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -27,6 +25,8 @@
     'data': [
         'security/ir.model.access.csv',
         'views/views_bodega.xml',
+        'views/views_proveedores.xml',
+        'views/views_retiro.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
