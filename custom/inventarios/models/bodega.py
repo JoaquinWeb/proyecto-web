@@ -11,6 +11,6 @@ class inventarios(models.Model):
     date_register = fields.Date(string="fecha de registros", required=True)
     description = fields.Text(string="descripcion")
     
-    """ registro_id = fields.One2many('inventarios.registro', 'inventario_id') """
+    
     proveedor_id = fields.Many2one('inventarios.bodega_proveedor', string="nombre proveedor")
 
