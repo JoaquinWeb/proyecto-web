@@ -9,3 +9,4 @@ class inventariosProveedor(models.Model):
     city = fields.Char(string="Ciudad", required=True)
     address = fields.Char(string="direccion", required=True)
     first_register = fields.Date(string="primer registro", required=True)
+    image = fields.Binary(string='Imagen')
