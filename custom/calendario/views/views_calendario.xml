@@ -52,7 +52,7 @@
             </field>
         </record>
 
-        <menuitem name="Inventarios" id="calendario.menu_root"/>
+        <menuitem name="Calendario" id="calendario.menu_root"/>
 
         <menuitem name="registro de datos" id="calendario.menu_list" parent="calendario.menu_root" action="calendario.guardar_action_window"/>
     </data>
