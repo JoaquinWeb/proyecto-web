@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gep_gep,gep.gep,model_gep_gep,,1,1,1,1
+
+access_cliente_proyecto,cliente.proyecto,model_cliente_proyecto,,1,1,1,1
+access_evaluacion,evaluacion,model_evaluacion,,1,1,1,1
+access_proyecto,proyecto,model_proyecto,,1,1,1,1

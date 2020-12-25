@@ -1,0 +1,37 @@
+<odoo>
+  <data>
+  <record model="ir.ui.view" id="gep.evaluacion_list">
+        <field name="name">evaluacion</field>
+        <field name="model">gep.evaluacion</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="resultado"/>
+                <field name="repuestos"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="gep.evaluacion_action_window">
+        <field name="name">evaluacion</field>
+        <field name="res_model">gep.evaluacion</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="gep.evaluacion_action_server">
+        <field name="name">evaluacion server</field>
+        <field name="model_id" ref="model_gep_evaluacion"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+        </field>
+    </record>
+
+    <menuitem name="gep" id="gep.menu_root"/>
+    <menuitem name="evaluacion" id="gep.menu_evaluacion" parent="gep.menu_root" action="gep.evaluacion_action_window"/>
+
+  </data>
+</odoo>

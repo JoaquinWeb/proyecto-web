@@ -1,0 +1,39 @@
+<odoo>
+  <data>
+  <record model="ir.ui.view" id="gep.proyecto_list">
+        <field name="name">proyecto</field>
+        <field name="model">gep.proyecto</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="descripcion"/>
+                <field name="fecha"/>
+                <field name="mecanico"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="gep.proyecto_action_window">
+        <field name="name">proyecto</field>
+        <field name="res_model">gep.proyecto</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="gep.proyecto_action_server">
+        <field name="name">proyecto server</field>
+        <field name="model_id" ref="model_gep_proyecto"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+        </field>
+    </record>
+
+    <menuitem name="gep" id="gep.menu_root"/>
+    <menuitem name="proyecto" id="gep.menu_proyecto" parent="gep.menu_root" action="gep.proyecto_action_window"/>
+
+  </data>
+</odoo>

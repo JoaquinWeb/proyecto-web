@@ -1,0 +1,38 @@
+<odoo>
+  <data>
+  <record model="ir.ui.view" id="gep.cliente_list">
+        <field name="name">cliente</field>
+        <field name="model">gep.cliente</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="patente"/>
+                <field name="vehiculo"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="gep.cliente_action_window">
+        <field name="name">cliente</field>
+        <field name="res_model">gep.cliente</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="gep.cliente_action_server">
+        <field name="name">cliente server</field>
+        <field name="model_id" ref="model_gep_cliente"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+        </field>
+    </record>
+
+    <menuitem name="gep" id="gep.menu_root"/>
+    <menuitem name="cliente" id="gep.menu_cliente" parent="gep.menu_root" action="gep.cliente_action_window"/>
+
+  </data>
+</odoo>
