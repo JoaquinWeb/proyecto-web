@@ -6,8 +6,8 @@ class inventarios(models.Model):
     _name = 'inventarios.bodega'
 
     name = fields.Char(string="Nombre", required=True)
-    value = fields.Integer(string="Valor", required=True)
-    quantity = fields.Integer(string="Cantidad", required=True)
+    value = fields.Integer(string="Valor C/U", required=True)
+    quantity = fields.Integer(string="Cantidad existente", required=True)
     date_register = fields.Date(string="fecha de registros", required=True)
     description = fields.Text(string="descripcion")
     
