@@ -8,7 +8,7 @@
                     <sheet>
                         <group col="4">
                             <field name="name"/>
-                            <field name="hour"/>
+                            <field name="date"/>
                         </group>
                         <group col="2">
                             <field name="n_chacis"/>
