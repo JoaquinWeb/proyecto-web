@@ -5,8 +5,9 @@
         <field name="model">gep.evaluacion</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="resultado"/>
-                <field name="repuestos"/>
+                <field name="nombre"/>
+                <field name="patente"/>
+                <field name="vehiculo"/>
             </tree>
         </field>
     </record>
@@ -34,4 +35,4 @@
     <menuitem name="evaluacion" id="gep.menu_evaluacion" parent="gep.menu_root" action="gep.evaluacion_action_window"/>
 
   </data>
-</odoo>
+</odoo
