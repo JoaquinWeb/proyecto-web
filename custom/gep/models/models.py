@@ -2,6 +2,7 @@
 
 from odoo import models, fields, api
 
+color = fields.Integer()
 # class gep(models.Model):
 #     _name = 'gep.gep'
 

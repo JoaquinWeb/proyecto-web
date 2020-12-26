@@ -10,7 +10,7 @@
     """,
 
 
-    'author': "Gaston Latorre Bariggi",
+    'author': "Gaston Oreste Latorre Bariggi",
     'website': "gastonlatorrebariggi@gmail.com",
 
     # Categories can be used to filter modules in modules listing
