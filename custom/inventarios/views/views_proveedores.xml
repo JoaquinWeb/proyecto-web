@@ -11,7 +11,6 @@
                 <field name="address"/>
                 <field name="first_register"/>
                 <field name="number_cel"/>
-                <field name="descuento"/>
                     <templates>
                         <t t-name="kanban-box">
                             <div class="oe_kanban_global_click o_kanban_record_has_image_fill inventarios.bodega_proveedor_kanban">
