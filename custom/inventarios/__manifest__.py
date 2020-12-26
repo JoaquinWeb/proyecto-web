@@ -25,7 +25,6 @@
     'data': [
         'security/ir.model.access.csv',
         'views/views_bodega.xml',
-        'views/views_proveedores.xml',
         'views/views_retiro.xml',
         'views/templates.xml',
     ],
