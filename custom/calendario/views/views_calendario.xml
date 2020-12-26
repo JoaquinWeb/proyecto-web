@@ -27,7 +27,7 @@
             <field name="arch" type="xml">
             <calendar string="CALENDARIO" date_start="date" >
                 <field name="name"/>
-                <field name="hour"/>
+                <field name="date"/>
                 <field name="n_chacis"/>
             </calendar>
             </field>

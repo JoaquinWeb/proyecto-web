@@ -1,19 +1,19 @@
 <odoo>
   <data>
-  <record model="ir.ui.view" id="gep.evaluacion_list">
+
+    <record model="ir.ui.view" id="gep.evaluacion_list">
         <field name="name">evaluacion</field>
         <field name="model">gep.evaluacion</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="nombre"/>
-                <field name="patente"/>
-                <field name="vehiculo"/>
+                <field name="resultado"/>
+                <field name="repuestos"/>
             </tree>
         </field>
     </record>
 
     <record model="ir.actions.act_window" id="gep.evaluacion_action_window">
-        <field name="name">evaluacion</field>
+        <field name="name">evaluacion_act_window</field>
         <field name="res_model">gep.evaluacion</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -32,7 +32,8 @@
     </record>
 
     <menuitem name="gep" id="gep.menu_root"/>
+
     <menuitem name="evaluacion" id="gep.menu_evaluacion" parent="gep.menu_root" action="gep.evaluacion_action_window"/>
 
   </data>
-</odoo
+</odoo>

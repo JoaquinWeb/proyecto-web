@@ -1,6 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-,,,,,,,
-,,,,,,,
 access_gep_cliente,gep.cliente,model_gep_cliente,,1,1,1,1
 access_gep_evaluacion,gep.evaluacion,model_gep_evaluacion,,1,1,1,1
 access_gep_proyecto,gep.proyecto,model_gep_proyecto,,1,1,1,1
