@@ -7,7 +7,7 @@ class cliente(models.Model):
 
     nombre = fields.Char(string="Nombre", required=True)
     patente = fields.Char(string="patente", required=True)
-    vehiculo = fields.Text(string="Nombre", required=True)
+    vehiculo = fields.Text(string="Modelo", required=True)
     
     
     proyecto_id = fields.Many2one('gep.proyecto', string="gep_cliente")
