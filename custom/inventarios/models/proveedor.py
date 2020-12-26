@@ -10,6 +10,6 @@ class inventariosProveedor(models.Model):
     address = fields.Char(string="direccion", required=True)
     first_register = fields.Date(string="primer registro", required=True)
     number_cel = fields.Integer(string="Telefono", required=True)
-    descuento = fields.Char(string="descuento", required=True)
+    
 
     image = fields.Binary(string='Imagen')
