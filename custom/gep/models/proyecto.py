@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class proyecto(models.Model):
-    _name = 'proyecto'
+    _name = 'gep.proyecto'
 
     nombre = fields.Char(string="Nombre", required=True)
     descripcion = fields.Text(string="descripcion")
@@ -11,4 +11,4 @@ class proyecto(models.Model):
     mecanico = fields.Char(string="Nombre", required=True)
     
     
-    evaluacion_id = fields.Many2one('proyecto.evaluacion_gep', string="gep_proyecto")
+    evaluacion_id = fields.Many2one('gep.evaluacion', string="gep_proyecto")
